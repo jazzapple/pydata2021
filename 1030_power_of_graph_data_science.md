@@ -63,7 +63,6 @@ Key points
         RETURN p2.id AS id, p2.subject AS source_subject, p1.subject AS target_subject
         LIMIT 5
         """
-"""
         ```
 
 ## neo4j
@@ -71,16 +70,19 @@ Key points
 * native query language is `cypher`       
 
 ## demo
-1. create blank sandbox in neo4j
-2. in neo4j load node and edge data with `populate_cora_db.cql`
-    * Create in-memory graph
-    * Create graph embeddings with FastRP 
+1. Clone https://github.com/cj2001/pydata2021/
+2. In neo4j https://sandbox.neo4j.com/ 
+    * create blank sandbox in neo4j
+    * using code in  `populate_cora_db.cql`, execute snippets to
+        * load node and edge data from github repo
+        * Create in-memory graph
+        * Create graph embeddings with FastRP 
 3. view sample in neo4j of graph with `MATCH (n) RETURN n`
-4. In Google Colab, paste in uri (Bolt URL) and password from nodej4 
-    * run notebooks/intro_to_cypher.ipynb
-    * run notebooks/cora_word_embs.ipynb runs linear SVM on bag of words embeddings
-    * run notebooks/cora_graph_embs.ipynb creates graph embeddings
-    * run notebooks/cora_tune_embs.ipynb tunes hyperparams with `optuna` 
+4. In Google Colab, paste in uri (Bolt URL) and password from nodej4 into notebooks and run analysis:
+    * `notebooks/intro_to_cypher.ipynb` runs EDA
+    * `notebooks/cora_word_embs.ipynb` runs linear SVM on bag of words embeddings
+    * `notebooks/cora_graph_embs.ipynb` creates graph embeddings
+    * `notebooks/cora_tune_embs.ipynb` tunes hyperparams with `optuna` 
 
 
 
