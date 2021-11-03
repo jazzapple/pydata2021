@@ -29,6 +29,7 @@ Key points
 * Monopartite vs Bipartite
     * Relates to how many different node types in a graph (Bipartite on left Monopartite on right)
     ![](2021-11-02-16-19-52.png)
+    * in Bipartite graphs, edges are only permitted between nodes of different types
 * Graphs can be transformed into matrices
     * Adjacency
     ![](2021-11-02-16-21-10.png)

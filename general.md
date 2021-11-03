@@ -17,6 +17,7 @@
 * identifies deuplicate tablular records https://www.deduplipy.com/
 * `ploomber` package for dependency resolution (DAG for code) via `yaml` orchestration pipeline: https://github.com/ploomber/ploomber  
 * `optuna` hyperparam tuning
+* `osmnx` package can easily download OpenStreetMap data , using Geopandas, NetworkX and matplotlib
 
 ## For Work
 * UCS - word embeddings comparison to UCS tags, per COVID19 WhatsApp presentation
@@ -24,3 +25,5 @@
 * `fugue` Python package is a unified interface for distributed computing that lets users execute Python, Pandas, and SQL code on Spark and Dask without rewrites 
     * https://github.com/fugue-project/fugue
     * https://fugue-project.github.io/tutorials/tutorials/beginner/introduction.html
+* Fugue Tune `pip install tune[hyperopt,sklearn]` is part of Fugue framekwork - run on various computation backend. A concise abstraction layer for hyperparm tuning.    
+* time-limited sprint idea is possibly the most useful concept for ML development (Agile ML presentation)    
